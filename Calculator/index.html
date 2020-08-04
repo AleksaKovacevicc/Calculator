@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <!--Copyright 2020, Aleksa Kovacevic, All rights reserved.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Online calculators for everything. Some solve problems, some satisfy curiosity." />
+  <meta name="keywords" content="calculator, mortgage, loan,lease, cooking, math, college tuition, agriculture, finance,fractions,love,scientific, design, health, unit converter, pocket, running, calculators" />
+  <link rel="icon" href="https://www.apkmirror.com/wp-content/uploads/2017/11/5a0aad10ea5ec.png">
+  <title id="Title">Calculator </title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="Notiflix\node_modules\notiflix\dist\notiflix-1.8.0.min.css" />
+  <script src="Notiflix\node_modules\notiflix\dist\notiflix-aio-1.8.0.js""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="main.js" type="text/javascript"></script>
+
+
+</head>
+
+<body >
+  <button type="button" id="notification" onclick="notif()"> 🔔</button>
+  <button type="button" id="Git" onclick="Git()"> GitHub</button>
+  <div id="wrapper">
+    <form name="case">
+      <!--Buttons -->
+      <input name="display" id="display" placeholder "0" onkeypress="" autofocus readonly>
+      <input type="button" id="bracket_left" class="oper" value="(" onclick="set('(')">
+      <input type="button" id="bracket_right" class="oper" value=")" onclick="set(')')">
+      <input type="button" id="back" class="oper" value="CE" onclick="runBack()">
+      <input type="button" id="divide" class="oper" value="÷" onclick="set('/')">
+
+      <input type="button" class="digit" value="1" onclick="set('1')">
+      <input type="button" class="digit" value="2" onclick="set('2')">
+      <input type="button" class="digit" value="3" onclick="set('3')">
+      <input type="button" id="multiply" class="oper" value="×" onclick="set('*')">
+
+      <input type="button" class="digit" value="4" onclick="set('4')">
+      <input type="button" class="digit" value="5" onclick="set('5')">
+      <input type="button" class="digit" value="6" onclick="set('6')">
+      <input type="button" id="minus" class="oper" value="-" onclick="set('-')">
+
+      <input type="button" class="digit" value="7" onclick="set('7')">
+      <input type="button" class="digit" value="8" onclick="set('8')">
+      <input type="button" class="digit" value="9" onclick="set('9')">
+      <input type="button" id="plus" class="oper" value="+" onclick="set('+')">
+
+      <input type="button" class="digit" value="0" onclick="set('0')">
+      <input type="button" id="comma" class="digit" value="." onclick="set('.')">
+      <input type="button" id="equal" class="oper" value="=" >
+      <div id="Cal">
+        <textarea id="TE"></textarea>
+      </div>
+      <div id="newpos">
+        <!-- button rainbow -->
+        <button type="button" id="Note" onclick="myFunction()"> Note</button></div>
+
+    </form>
+    <div id="new">
+      <!--result textarea-->
+      <textarea id="result" readonly></textarea>
+      <button type="button" id="Del" onclick="Del()"> Delete</button>
+      <button type="button" id="Print" onclick="printTextArea()"> Print</button>
+      <button type="button" id="FP" onclick="FontP()">Font +</button>
+      <button type="button" id="FM" onclick="FontM()">Font -</button>
+      <button type="button" id="SaveBtn" onclick="updateOutput()">Save </button>
+    </div>
+  </div>
+
+</body>
